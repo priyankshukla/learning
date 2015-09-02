@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	   					   http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean name="circle" class="com.jkt.spring.pojo.Circle">
+		<property name="name" value="Circle Object" />
+	</bean>
+	
+	<bean name="triangle" class="com.jkt.spring.pojo.Triangle">
+		<property name="name" value="Triangle Object" />
+	</bean>
+	
+	<bean name="shapeService" class="com.jkt.spring.service.ShapeService" autowire="byName"/>
+</beans>
